@@ -17,7 +17,18 @@ class Subject(models.Model):
         inverse_name="subject_id",
         string="Teacher",)
     teacher_number = fields.Integer(related="teacher_id.teacher_number",string="ID number")
-    grade = fields.Integer(string="Grade")
+    grade = fields.Selection(selection=[
+        ('one','1'),
+        ('two','2'),
+        ('three','3'),
+        ('four','4'),
+        ('five','5'),
+        ('six','6'),
+        ('seven','7'),
+        ('eight','8'),
+        ('nine','9'),
+        ('ten','10'),
+    ],default='one', string='Grade', copy=False)
     classroom_number = fields.Integer(string="Classroom")
     state = fields.Selection(selection=[
         ('active','Active'),
