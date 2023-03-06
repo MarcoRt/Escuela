@@ -15,6 +15,8 @@
 						<group>
 							<field name="name" placeholder="Nombre"></field>
 							<field name="grade" placeholder="Grado"  widget="integer" options="{'format': 0}"></field>
+							<field name="teacher_ids"></field>
+							<field name="teacher_number" widget="integer" options="{'format': 0}" readonly="1"></field>
 						</group>
 						<group>
 							<field name="classroom_number" placeholder="Número de salón"  widget="integer" options="{'format': 0}"></field>
@@ -32,7 +34,7 @@
 									</control>
 									<field name="student"></field>
 									<field name="student_number" widget="integer" options="{'format': 0}"></field>
-									<field name="score" widget="badge" decoration-danger="score > 7" decoration-success="score >= 9"></field>
+									<field name="score" decoration-danger="score &lt;= 6" decoration-warning="score &lt; 9" decoration-success="score &gt;= 9"></field>
 								</tree>
 							</field>
 						</page>

@@ -13,7 +13,10 @@ class Subject(models.Model):
     _description = "Módulo materias"
     
     name = fields.Char(string="Nombre de la materia")
-    #teacher_number = fields.Integer(unique=True,string="Numero de estudiante")
+    teacher_ids = fields.Many2one(comodel_name="teacher",
+        inverse_name="subject_id",
+        string="Maestros",)
+    teacher_number = fields.Integer(related="teacher_ids.teacher_number",string="Cédula del maestro")
     grade = fields.Integer(string="Número de grado")
     classroom_number = fields.Integer(string="Número de aula")
     state = fields.Selection(selection=[

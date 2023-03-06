@@ -13,4 +13,10 @@ class Teacher(models.Model):
     _description = "Módulo maestro"
     
     name = fields.Char(string="Nombre del maestro")
-    teacher_number = fields.Integer(unique=True, string="Cédula del maestro")
+    teacher_number = fields.Integer(string="Cédula del maestro")
+    subject_id = fields.One2many(comodel_name="subject",
+        inverse_name="teacher_ids",
+        string="Materia",)
+    _sql_constraints = [
+        ('teacher_number_uniq', 'unique (teacher_number)', 'La cédula del maestro debe de ser única')
+    ]
