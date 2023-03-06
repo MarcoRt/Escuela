@@ -19,7 +19,7 @@
 							<field name="teacher_number" widget="integer" options="{'format': 0}" readonly="1"></field>
 						</group>
 						<group>
-							<field name="classroom_number" placeholder="Classroom number"  widget="integer" options="{'format': 0}"></field>
+							<field name="classroom_number"></field>
 							<field name="start_date"></field>
 							<field name="end_date"></field>
 							<field name="schedule"></field>
