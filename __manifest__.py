@@ -10,6 +10,6 @@
     'autor' : 'Marco Rodriguez',
     'category' : 'School',
     'description' : 'Módulo de escuela',
-    'data' : [
+    'data' : ['views/menu.xml'
     ]
 }

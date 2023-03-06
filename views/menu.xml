@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_open_student" model="ir.actions.act_window">
+        <field name="name">Estudiantes</field>
+        <field name="res_model">student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_open_subject" model="ir.actions.act_window">
+        <field name="name">Materias</field>
+        <field name="res_model">subject</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_open_teacher" model="ir.actions.act_window">
+        <field name="name">Maestros</field>
+        <field name="res_model">teacher</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_principal_school" name="Escuela" action="action_open_student"/>
+    <menuitem id="menu_principal_subject" name="Materias" parent="menu_principal_school" action="action_open_subject"/>
+    <menuitem id="menu_principal_students" name="Alumnos" parent="menu_principal_school" action="action_open_student"/>
+    <menuitem id="menu_principal_teacher" name="Maestros" parent="menu_principal_school" action="action_open_teacher"/>
+
+</odoo>
