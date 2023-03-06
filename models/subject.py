@@ -20,7 +20,7 @@ class Subject(models.Model):
         ('active','Activo'),
         ('inactive','Inactivo'),
     ],default='active', string='Estados', copy=False)
-    students_ids = fields.One2many(comodel_name="student",
+    students_ids = fields.One2many(comodel_name="student_lines",
         inverse_name="subject_id",
         string="Alumnos",)
     start_date = fields.Datetime(string='Fecha de inicio de la materia', copy=False)

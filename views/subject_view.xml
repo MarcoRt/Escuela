@@ -8,7 +8,7 @@
 				<header>
 					<button string="Activo" type="object" name='activate_student' class='oe_highlight'/>
 					<button string="Inactivo" type='object' name='inactivate_student'/>
-                    <field name='state' widget='statusbar' statusbar_visible='active,inactive'/>
+					<field name='state' widget='statusbar' statusbar_visible='active,inactive'/>
 				</header>
 				<sheet>
 					<group>
@@ -23,6 +23,20 @@
 							<field name="schedule"></field>
 						</group>
 					</group>
+					<notebook>
+						<page id="students_ids" string="Alumnos">
+							<field name="students_ids">
+								<tree editable="bottom">
+									<control>
+										<create name="add_name" string="Agregar alumnos"/>
+									</control>
+									<field name="student"></field>
+									<field name="student_number" widget="integer" options="{'format': 0}"></field>
+									<field name="score" widget="badge" decoration-danger="score > 7" decoration-success="score >= 9"></field>
+								</tree>
+							</field>
+						</page>
+					</notebook>
 				</sheet>
 			</form>
 		</field>

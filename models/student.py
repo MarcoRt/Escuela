@@ -15,7 +15,4 @@ class Student(models.Model):
      name = fields.Char(string="Nombre del alumno",required=True)
      grade = fields.Integer(required=True, string="Grado")
      age = fields.Integer(required=True, string="Edad del alumno")
-     student_number = fields.Integer(string="Numero de estudiante")
-     subject_id = fields.Many2one(comodel_name="subject",
-        inverse_name="students_ids",
-        string="Materia",)
+     student_number = fields.Integer(string="Número de estudiante")
