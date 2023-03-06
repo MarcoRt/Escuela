@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_subject_form" model="ir.ui.view">
+		<field name="name">view.subject.form</field>
+		<field name="model">subject</field>
+		<field name="arch" type="xml">
+			<form>
+				<header>
+					<button string="Activo" type="object" name='activate_student' class='oe_highlight'/>
+					<button string="Inactivo" type='object' name='inactivate_student'/>
+                    <field name='state' widget='statusbar' statusbar_visible='active,inactive'/>
+				</header>
+				<sheet>
+					<group>
+						<group>
+							<field name="name" placeholder="Nombre"></field>
+							<field name="grade" placeholder="Grado"  widget="integer" options="{'format': 0}"></field>
+						</group>
+						<group>
+							<field name="classroom_number" placeholder="Número de salón"  widget="integer" options="{'format': 0}"></field>
+							<field name="start_date"></field>
+							<field name="end_date"></field>
+							<field name="schedule"></field>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>

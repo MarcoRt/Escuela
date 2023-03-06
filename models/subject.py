@@ -20,6 +20,9 @@ class Subject(models.Model):
         ('active','Activo'),
         ('inactive','Inactivo'),
     ],default='active', string='Estados', copy=False)
+    students_ids = fields.One2many(comodel_name="student",
+        inverse_name="subject_id",
+        string="Alumnos",)
     start_date = fields.Datetime(string='Fecha de inicio de la materia', copy=False)
     end_date = fields.Datetime(string='Fecha fin de la materia', copy=False)
     schedule = fields.Selection(selection=[
@@ -37,3 +40,9 @@ class Subject(models.Model):
         ('18_19','De 18 a 19'),
         ('19_20','De 19 a 20'),
     ],default='7_8', string='Horario', copy=False)
+    
+    def activate_student(self):
+        self.state = 'active'
+     
+    def inactivate_student(self):
+        self.state = 'inactive'

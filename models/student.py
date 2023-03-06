@@ -16,9 +16,6 @@ class Student(models.Model):
      grade = fields.Integer(required=True, string="Grado")
      age = fields.Integer(required=True, string="Edad del alumno")
      student_number = fields.Integer(string="Numero de estudiante")
-     
-     def activate_student(self):
-          logger.info("Me estoy ejecutando")
-     
-     def inactivate_student(self):
-          logger.info("Me estoy ejecutando")
+     subject_id = fields.Many2one(comodel_name="subject",
+        inverse_name="students_ids",
+        string="Materia",)
