@@ -12,22 +12,22 @@ class Subject(models.Model):
     _name = "subject"
     _description = "Módulo materias"
     
-    name = fields.Char(string="Nombre de la materia")
-    teacher_ids = fields.Many2one(comodel_name="teacher",
+    name = fields.Char(string="Name")
+    teacher_id = fields.Many2one(comodel_name="teacher",
         inverse_name="subject_id",
-        string="Maestros",)
-    teacher_number = fields.Integer(related="teacher_ids.teacher_number",string="Cédula del maestro")
-    grade = fields.Integer(string="Número de grado")
-    classroom_number = fields.Integer(string="Número de aula")
+        string="Teacher",)
+    teacher_number = fields.Integer(related="teacher_id.teacher_number",string="ID number")
+    grade = fields.Integer(string="Grade")
+    classroom_number = fields.Integer(string="Classroom")
     state = fields.Selection(selection=[
-        ('active','Activo'),
-        ('inactive','Inactivo'),
-    ],default='active', string='Estados', copy=False)
+        ('active','Active'),
+        ('inactive','Inactive'),
+    ],default='active', string='State', copy=False)
     students_ids = fields.One2many(comodel_name="student_lines",
         inverse_name="subject_id",
-        string="Alumnos",)
-    start_date = fields.Datetime(string='Fecha de inicio de la materia', copy=False)
-    end_date = fields.Datetime(string='Fecha fin de la materia', copy=False)
+        string="Students",)
+    start_date = fields.Datetime(string='Start date', copy=False)
+    end_date = fields.Datetime(string='End date', copy=False)
     schedule = fields.Selection(selection=[
         ('7_8','De 7 a 8'),
         ('8_9','De 8 a 9'),
@@ -42,10 +42,10 @@ class Subject(models.Model):
         ('17_18','De 17 a 18'),
         ('18_19','De 18 a 19'),
         ('19_20','De 19 a 20'),
-    ],default='7_8', string='Horario', copy=False)
+    ],default='7_8', string='Schedule', copy=False)
     
     def activate_student(self):
         self.state = 'active'
      
-    def inactivate_student(self):
+    def inactive_student(self):
         self.state = 'inactive'

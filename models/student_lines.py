@@ -12,9 +12,9 @@ class StudentLines(models.Model):
      _name = "student_lines"
      _description = "Líneas de estudiantes"
      
-     student = fields.Many2one(comodel_name="student", string="Alumno")
-     student_number = fields.Integer(related="student.student_number",string="Número de estudiante")
-     score = fields.Float(string="Calificación")
+     student = fields.Many2one(comodel_name="student", string="Student")
+     student_number = fields.Integer(related="student.student_number",string="Student number")
+     score = fields.Float(string="Score")
      subject_id = fields.Many2one(comodel_name="subject",
         inverse_name="students_ids",
-        string="Materia",)
+        string="Subject",)

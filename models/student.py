@@ -12,10 +12,10 @@ class Student(models.Model):
      _name = "student"
      _description = "Módulo estudiante"
      
-     name = fields.Char(string="Nombre del alumno",required=True)
-     grade = fields.Integer(required=True, string="Grado")
-     age = fields.Integer(required=True, string="Edad del alumno")
-     student_number = fields.Integer(string="Número de estudiante")
+     name = fields.Char(string="Name",required=True)
+     grade = fields.Integer(required=True, string="Grade")
+     age = fields.Integer(required=True, string="Age")
+     student_number = fields.Integer(string="Student number")
      _sql_constraints = [
-        ('student_number_uniq', 'unique (student_number)', 'El número de alumno debe de ser único')
+        ('student_number_uniq', 'unique (student_number)', "Student number must be unique.")
      ]

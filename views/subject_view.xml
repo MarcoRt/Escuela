@@ -6,31 +6,31 @@
 		<field name="arch" type="xml">
 			<form>
 				<header>
-					<button string="Activo" type="object" name='activate_student' class='oe_highlight'/>
-					<button string="Inactivo" type='object' name='inactivate_student'/>
+					<button string="Active" type="object" name='activate_student' class='oe_highlight'/>
+					<button string="inactive" type='object' name='inactive_student'/>
 					<field name='state' widget='statusbar' statusbar_visible='active,inactive'/>
 				</header>
 				<sheet>
 					<group>
 						<group>
-							<field name="name" placeholder="Nombre"></field>
-							<field name="grade" placeholder="Grado"  widget="integer" options="{'format': 0}"></field>
-							<field name="teacher_ids"></field>
+							<field name="name" placeholder="Name"></field>
+							<field name="grade" placeholder="Grade"  widget="integer" options="{'format': 0}"></field>
+							<field name="teacher_id"></field>
 							<field name="teacher_number" widget="integer" options="{'format': 0}" readonly="1"></field>
 						</group>
 						<group>
-							<field name="classroom_number" placeholder="Número de salón"  widget="integer" options="{'format': 0}"></field>
+							<field name="classroom_number" placeholder="Classroom number"  widget="integer" options="{'format': 0}"></field>
 							<field name="start_date"></field>
 							<field name="end_date"></field>
 							<field name="schedule"></field>
 						</group>
 					</group>
 					<notebook>
-						<page id="students_ids" string="Alumnos">
+						<page id="students_ids" string="Students">
 							<field name="students_ids">
 								<tree editable="bottom">
 									<control>
-										<create name="add_name" string="Agregar alumnos"/>
+										<create name="add_name" string="Add student"/>
 									</control>
 									<field name="student"></field>
 									<field name="student_number" widget="integer" options="{'format': 0}"></field>

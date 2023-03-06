@@ -8,10 +8,10 @@
 				<sheet>
 					<group>
 						<group>
-							<field name="name" placeholder="Nombre"></field>
+							<field name="name" placeholder="Name"></field>
 						</group>
 						<group>
-							<field name="teacher_number" placeholder="Número de maestro" widget="integer" options="{'format': 0}"></field>
+							<field name="teacher_number" placeholder="ID number" widget="integer" options="{'format': 0}"></field>
 						</group>
 					</group>
 				</sheet>

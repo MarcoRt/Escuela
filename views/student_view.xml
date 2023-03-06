@@ -8,12 +8,12 @@
 				<sheet>
 					<group>
 						<group>
-							<field name="name" placeholder="Nombre"></field>
-							<field name="grade" placeholder="Grado"></field>
+							<field name="name" placeholder="Name"></field>
+							<field name="grade" placeholder="Grade"></field>
 						</group>
 						<group>
-							<field name="age" placeholder="Edad"></field>
-							<field name="student_number" placeholder="Número de alumno" widget="integer" options="{'format': 0}"></field>
+							<field name="age" placeholder="Age"></field>
+							<field name="student_number" placeholder="Student number" widget="integer" options="{'format': 0}"></field>
 						</group>
 					</group>
 				</sheet>
