@@ -13,21 +13,21 @@
 				<sheet>
 					<group>
 						<group>
-							<field name="name" placeholder="Name"></field>
-							<field name="grade"></field>
-							<field name="teacher_id"></field>
-							<field name="teacher_number" widget="integer" options="{'format': 0}" readonly="1"></field>
+							<field name="name" placeholder="Name" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
+							<field name="grade" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
+							<field name="teacher_id" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
+							<field name="teacher_number" widget="integer" options="{'format': 0}" readonly="1" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
 						</group>
 						<group>
-							<field name="classroom_number"></field>
-							<field name="start_date"></field>
-							<field name="end_date"></field>
-							<field name="schedule"></field>
+							<field name="classroom_number" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
+							<field name="start_date" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
+							<field name="end_date" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
+							<field name="schedule" attrs="{'readonly': [('state', '!=', 'active')]}"></field>
 						</group>
 					</group>
 					<notebook>
 						<page id="students_ids" string="Students">
-							<field name="students_ids">
+							<field name="students_ids" attrs="{'readonly': [('state', '!=', 'active')]}">
 								<tree editable="bottom">
 									<control>
 										<create name="add_name" string="Add student"/>
