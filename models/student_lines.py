@@ -17,6 +17,8 @@ class StudentLines(models.Model):
     student_number = fields.Integer(
         related="student.student_number", string="Student number"
     )
+    grade = fields.Selection(
+        related="student.grade", string="Grade")
     score = fields.Float(string="Score")
     subject_id = fields.Many2one(
         comodel_name="subject",
