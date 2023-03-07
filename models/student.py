@@ -33,6 +33,9 @@ class Student(models.Model):
     )
     age = fields.Integer(required=True, string="Age")
     student_number = fields.Integer(string="Student number")
+    student_lines_ids = fields.One2many(comodel_name="student_lines",
+        inverse_name="student",
+        string="Student lines",)
     _sql_constraints = [
         (
             "student_number_uniq",

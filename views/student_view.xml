@@ -16,6 +16,17 @@
 							<field name="student_number" placeholder="Student number" widget="integer" options="{'format': 0}"></field>
 						</group>
 					</group>
+					<notebook>
+						<page name="subjects" string="Subjects">
+							<field name="student_lines_ids" readonly="1">
+								<tree>
+									<field name="subject_id"></field>
+									<field name="grade"></field>
+									<field name="score" decoration-danger="score &lt;= 6" decoration-warning="score &lt; 9" decoration-success="score &gt;= 9"></field>
+								</tree>
+							</field>
+						</page>
+					</notebook>
 				</sheet>
 			</form>
 		</field>
