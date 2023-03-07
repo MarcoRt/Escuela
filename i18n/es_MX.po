@@ -1,0 +1,321 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Escuela
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-07 18:29+0000\n"
+"PO-Revision-Date: 2023-03-07 18:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__student__grade__ten
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__classroom_number__ten
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__grade__ten
+msgid "10"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__state__active
+#: model_terms:ir.ui.view,arch_db:Escuela.view_subject_form
+msgid "Active"
+msgstr "Activo"
+
+#. module: Escuela
+#: model_terms:ir.ui.view,arch_db:Escuela.view_subject_form
+msgid "Add student"
+msgstr "Agregar estudiante"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__age
+#: model_terms:ir.ui.view,arch_db:Escuela.view_student_form
+msgid "Age"
+msgstr "Edad"
+
+#. module: Escuela
+#: model:ir.ui.menu,name:Escuela.menu_principal_students
+msgid "Alumnos"
+msgstr "Alumnos"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__classroom_number
+msgid "Classroom"
+msgstr "Salón"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__create_uid
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__create_uid
+#: model:ir.model.fields,field_description:Escuela.field_subject__create_uid
+#: model:ir.model.fields,field_description:Escuela.field_teacher__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__create_date
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__create_date
+#: model:ir.model.fields,field_description:Escuela.field_subject__create_date
+#: model:ir.model.fields,field_description:Escuela.field_teacher__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__10_11
+msgid "De 10 a 11"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__11_12
+msgid "De 11 a 12"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__12_13
+msgid "De 12 a 13"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__13_14
+msgid "De 13 a 14"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__14_15
+msgid "De 14 a 15"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__15_16
+msgid "De 15 a 16"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__16_17
+msgid "De 16 a 17"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__17_18
+msgid "De 17 a 18"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__18_19
+msgid "De 18 a 19"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__19_20
+msgid "De 19 a 20"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__7_8
+msgid "De 7 a 8"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__8_9
+msgid "De 8 a 9"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__schedule__9_10
+msgid "De 9 a 10"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__display_name
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__display_name
+#: model:ir.model.fields,field_description:Escuela.field_subject__display_name
+#: model:ir.model.fields,field_description:Escuela.field_teacher__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__end_date
+msgid "End date"
+msgstr "Fecha de termino"
+
+#. module: Escuela
+#: model:ir.ui.menu,name:Escuela.menu_principal_school
+msgid "Escuela"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.actions.act_window,name:Escuela.action_open_student
+msgid "Estudiantes"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__grade
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__grade
+#: model:ir.model.fields,field_description:Escuela.field_subject__grade
+msgid "Grade"
+msgstr "Grado"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__id
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__id
+#: model:ir.model.fields,field_description:Escuela.field_subject__id
+#: model:ir.model.fields,field_description:Escuela.field_teacher__id
+msgid "ID"
+msgstr "Número de identificación"
+
+#. module: Escuela
+#: model:ir.model.constraint,message:Escuela.constraint_teacher_teacher_number_uniq
+msgid "ID Number must be unique."
+msgstr "El número de identificación debe ser único."
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__teacher_number
+#: model:ir.model.fields,field_description:Escuela.field_teacher__teacher_number
+#: model_terms:ir.ui.view,arch_db:Escuela.view_teacher_form
+msgid "ID number"
+msgstr "Número de identificación"
+
+#. module: Escuela
+#: model:ir.model.fields.selection,name:Escuela.selection__subject__state__inactive
+msgid "Inactive"
+msgstr "Inactivo"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student____last_update
+#: model:ir.model.fields,field_description:Escuela.field_student_lines____last_update
+#: model:ir.model.fields,field_description:Escuela.field_subject____last_update
+#: model:ir.model.fields,field_description:Escuela.field_teacher____last_update
+msgid "Last Modified on"
+msgstr "Modificado por última vez el"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__write_uid
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__write_uid
+#: model:ir.model.fields,field_description:Escuela.field_subject__write_uid
+#: model:ir.model.fields,field_description:Escuela.field_teacher__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__write_date
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__write_date
+#: model:ir.model.fields,field_description:Escuela.field_subject__write_date
+#: model:ir.model.fields,field_description:Escuela.field_teacher__write_date
+msgid "Last Updated on"
+msgstr "Última actualización por"
+
+#. module: Escuela
+#: model:ir.model,name:Escuela.model_student_lines
+msgid "Líneas de estudiantes"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.actions.act_window,name:Escuela.action_open_teacher
+#: model:ir.ui.menu,name:Escuela.menu_principal_teacher
+msgid "Maestros"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.actions.act_window,name:Escuela.action_open_subject
+#: model:ir.ui.menu,name:Escuela.menu_principal_subject
+msgid "Materias"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model,name:Escuela.model_student
+msgid "Módulo estudiante"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model,name:Escuela.model_teacher
+msgid "Módulo maestro"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model,name:Escuela.model_subject
+msgid "Módulo materias"
+msgstr ""
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__name
+#: model:ir.model.fields,field_description:Escuela.field_subject__name
+#: model:ir.model.fields,field_description:Escuela.field_teacher__name
+#: model_terms:ir.ui.view,arch_db:Escuela.view_student_form
+#: model_terms:ir.ui.view,arch_db:Escuela.view_subject_form
+#: model_terms:ir.ui.view,arch_db:Escuela.view_teacher_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__schedule
+msgid "Schedule"
+msgstr "Horario"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__score
+msgid "Score"
+msgstr "Calificación"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__start_date
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__state
+msgid "State"
+msgstr "Estado"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__student
+msgid "Student"
+msgstr "Alumno"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__student_lines_ids
+msgid "Student lines"
+msgstr "Líneas de alumnos"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student__student_number
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__student_number
+#: model_terms:ir.ui.view,arch_db:Escuela.view_student_form
+msgid "Student number"
+msgstr "Número de estudiante"
+
+#. module: Escuela
+#: model:ir.model.constraint,message:Escuela.constraint_student_student_number_uniq
+msgid "Student number must be unique."
+msgstr "El número del alumno debe ser único"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__students_ids
+#: model_terms:ir.ui.view,arch_db:Escuela.view_subject_form
+msgid "Students"
+msgstr "Alumnos"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_student_lines__subject_id
+#: model:ir.model.fields,field_description:Escuela.field_teacher__subject_id
+msgid "Subject"
+msgstr "Materia"
+
+#. module: Escuela
+#: model_terms:ir.ui.view,arch_db:Escuela.view_student_form
+msgid "Subjects"
+msgstr "Materias"
+
+#. module: Escuela
+#: model:ir.model.fields,field_description:Escuela.field_subject__teacher_id
+msgid "Teacher"
+msgstr "Maestro"
+
+#. module: Escuela
+#: model_terms:ir.ui.view,arch_db:Escuela.view_subject_form
+msgid "inactive"
+msgstr "inactivo"
