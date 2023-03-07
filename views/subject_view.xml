@@ -27,13 +27,13 @@
 					</group>
 					<notebook>
 						<page id="students_ids" string="Students">
-							<field name="students_ids" attrs="{'readonly': [('state', '!=', 'active')]}">
+							<field name="students_ids" attrs="{'readonly': [('state', '!=', 'active')]}"  domain="[('grade','=',grade)]">
 								<tree editable="bottom">
 									<control>
 										<create name="add_name" string="Add student"/>
 									</control>
-									<field name="student"  domain="[('grade','=',parent.grade)]"></field>
 									<field name="grade" invisible="1"></field>
+									<field name="name"></field>
 									<field name="student_number" widget="integer" options="{'format': 0}"></field>
 									<field name="score" decoration-danger="score &lt;= 6" decoration-warning="score &lt; 9" decoration-success="score &gt;= 9"></field>
 								</tree>

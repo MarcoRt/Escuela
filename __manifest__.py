@@ -12,6 +12,5 @@
         "views/student_view.xml",
         "views/teacher_view.xml",
         "views/subject_view.xml",
-        "views/subject_view.xml",
     ],
 }
