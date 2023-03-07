@@ -20,7 +20,7 @@ class Subject(models.Model):
         string="Teacher",
     )
     teacher_number = fields.Integer(
-        related="teacher_id.teacher_number", string="Teacher's ID number"
+        related="teacher_id.teacher_number", string="ID number"
     )
     grade = fields.Selection(
         selection=[
@@ -65,12 +65,11 @@ class Subject(models.Model):
         string="State",
         copy=False,
     )
-    students_ids = fields.Many2many(
-        comodel_name="student",
+    students_ids = fields.One2many(
+        comodel_name="student_lines",
         inverse_name="subject_id",
         string="Students",
     )
-    score = fields.Float(related="students_ids.score", string="Score")
     start_date = fields.Datetime(string="Start date", copy=False)
     end_date = fields.Datetime(string="End date", copy=False)
     schedule = fields.Selection(

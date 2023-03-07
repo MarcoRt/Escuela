@@ -33,12 +33,6 @@ class Student(models.Model):
     )
     age = fields.Integer(required=True, string="Age")
     student_number = fields.Integer(string="Student number")
-    subject_ids = fields.Many2many(
-        comodel_name="subject",
-        inverse_name="students_ids",
-        string="Subjects",
-      )
-    score = fields.Float(string="Score")
     _sql_constraints = [
         (
             "student_number_uniq",
