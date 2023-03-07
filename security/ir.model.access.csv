@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acceso_subject_usuario,acceso subject usuario,model_subject,group_subject_usuario,1,1,1,1
+acceso_student_usuario,acceso student usuario,model_student,group_subject_usuario,1,1,1,1
+acceso_teacher_usuario,acceso teacher usuario,model_teacher,group_subject_usuario,1,1,1,1
+acceso_student_lines_usuario,acceso student lines usuario,model_student_lines,group_subject_usuario,1,1,1,1
+
+acceso_subject_administrador,acceso subject administrador,model_subject,group_subject_administrador,1,1,1,1
+acceso_student_administrador,acceso student administrador,model_student,group_subject_administrador,1,1,1,1
+acceso_teacher_administrador,acceso teacher administrador,model_teacher,group_subject_administrador,1,1,1,1
+acceso_student_lines_administrador,acceso student_lines administrador,model_student_lines,group_subject_administrador,1,1,1,1

@@ -13,5 +13,7 @@
         "views/teacher_view.xml",
         "views/subject_view.xml",
         "views/subject_view.xml",
+        "security/security.xml",
+        "security/ir.model.access.csv",
     ],
 }
