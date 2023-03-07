@@ -12,7 +12,16 @@ logger = logging.getLogger(__name__)
 class Subject(models.Model):
     _name = "subject"
     _description = "Módulo materias"
-
+    
+    @api.onchange("students_ids")
+    def _onchange_students_ids(self):
+        for line in self.students_ids:
+            print("line.score ",line.score) 
+            if line.score > 10:
+                raise UserError("La calificación no puede ser mayor a 10")
+            if line.score < 0:
+                raise UserError("La calificación no puede ser menor a 0")
+            
     name = fields.Char(string="Name")
     teacher_id = fields.Many2one(
         comodel_name="teacher",
